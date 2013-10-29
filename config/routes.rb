@@ -1,4 +1,6 @@
 Shirelist::Application.routes.draw do
+  root :to => 'listings#index'
+  resources :listings, :only => [:index, :new, :create, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

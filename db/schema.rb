@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20131029044651) do
     t.string   "description"
     t.string   "price"
     t.string   "user_id"
-    t.string   "item_key"
+    t.string   "listing_key"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

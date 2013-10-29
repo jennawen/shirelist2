@@ -1,0 +1,8 @@
+
+<h3>What would you like to list today? </h3>
+<%= form_for @listing, html: {class: "listing_form"} do |f| %>
+  <%= f.text_field :title, placeholder: "title" %><br />
+  <%= f.text_area :description, size: "60x12", placeholder: "description" %><br />
+  <%= f.text_field :price, placeholder: "price" %><br />
+  <%= f.submit "Add Listing" %>
+<% end %>
