@@ -9,7 +9,7 @@ class ListingsController < ApplicationController #inherits from ApplicationContr
 
   def create
     @listing = Listing.create(params[:listing])
-    listing_key = SecureRandom.urlsafe_base64
+    listing_key = SecureRandom.urlsafe_base64 #this should be in the model and automatically done via callback
     @listing[:listing_key] = listing_key
     redirect_to listing_path(@listing.id) if @listing.save
   end

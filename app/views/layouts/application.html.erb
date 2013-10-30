@@ -5,9 +5,21 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css'>
 </head>
-<body><a href = "/">Home</a>
-<%= yield %>
-
+<body>
+  <header>
+    <div id = "nav-bar">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Login", root_path %></li>
+        <li>
+      </ul>
+    </div>
+  </header>
+  <div id = "main-container">
+   <%= yield %>
+  </div>
 </body>
 </html>
