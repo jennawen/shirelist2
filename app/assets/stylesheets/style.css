@@ -1,0 +1,33 @@
+body {
+  color: rgb(77, 75, 75);
+  margin: 0;
+}
+
+#nav-bar {
+  background-color: gray;
+  padding: 4px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  padding-left: 5px;
+  margin: 0px;
+
+}
+
+#nav-bar ul li {
+  display: inline;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: .8em;
+  font-family: 'Share Tech', sans-serif;
+}
+
+
+#main-container {
+  margin: 30px;
+  font-family: 'PT Serif Caption', serif;
+}
